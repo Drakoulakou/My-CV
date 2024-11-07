@@ -9,7 +9,7 @@ const CV = () => {
   const personalInfo = {
     name: "Eleftheria Drakoulakou",
     title: "Frontend Developer",
-    address: "Agiou Nikolaou 5, Alimos Greece",
+    address: "Alimos Greece",
     phone: "6978524096",
     email: "drakelef@gmail.com",
     website: "https://github.com/Drakoulakou",
@@ -17,29 +17,84 @@ const CV = () => {
 
   const education = [
     {
-      degree: "Degree Name",
-      school: "School Name",
-      year: "Year",
+      degree: "Udemy The Complete 2022 Web Development Bootcamp",
+      school:
+        "HTML5, CSS3, Bootstrap, JavaScript(ES6), ReactJS, DOM, jQuery,git, Design",
+      year: "2021-2022",
+    },
+    {
+      degree: "Professional Licence - Pharmacy Assistant",
+      year: "2017",
+    },
+    {
+      degree: "Professional School - Pharmacy Assistant",
+      year: "2012-2014",
+    },
+    {
+      degree:
+        "Vocational Training Institute Preschool management of creation and expression activities",
+      year: "2008-2011",
+    },
+    {
+      degree: "3rd Athletic High School of Argyroupoli",
+      year: "2008",
     },
     // Add more education entries if needed
   ];
 
   const experience = [
     {
-      position: "Position",
-      company: "Company Name",
-      startDate: "Start Date",
-      endDate: "End Date",
+      position: "Frontend developer",
+      company: "Kotsovolos | Frontend Developer",
+      startDate: "October 2022",
+      endDate: "November 2024",
       responsibilities: [
-        "Responsibility 1",
-        "Responsibility 2",
-        // Add more responsibilities if needed
+        "JavaScript, React, Redux, Redux Observable, RxJS, Azure,Material UI, CSS3, Git and debugging",
+        "Projects: kotsovolos.gr (React), K-Retail (React)",
+        "Development of enterprise scale retail software project controlling 95+ physical and online stores with complex event-driven functionality over hundreds of code modules.",
+        "Fast paced environment in a team of 50+ internal and external developers",
+        "Agile work culture (Scrum)",
+        "Induction of new developers on the company's projects",
       ],
     },
-    // Add more experience entries if needed
+    {
+      position: "Junior Frontent developer",
+      company: "Evalest",
+      startDate: "August 2021",
+      endDate: "September 2022",
+      responsibilities: [
+        "JavaScript, React, HTML5, CSS3, Sass, Bootstrap, JavaScript (ES6+), JQuery, Git and debugging",
+        "Projects: Nesea Sifnos (WordPress), Circel (React), Insurance aggregator platform (React)",
+        "WordPress website development",
+        "Introduced to modern programming and front end development",
+      ],
+    },
+    {
+      position: "Pharmacy assistant",
+      company: "Pharmacy",
+      startDate: "October 2008",
+      endDate: "April 2022",
+      responsibilities: [
+        "Responsible for all software systems (e-shop, servers, CRM)",
+        "Customer service in the pharmaceutical and parapharmaceutical departments",
+        "Daily solving customers and patients problems",
+        "Sales and promotion of beauty products",
+      ],
+    },
   ];
 
-  const skills = ["Skill 1", "Skill 2", "Skill 3", "Skill 4"];
+  const skills = [
+    "Javascript (ES6+)",
+    "NextJS",
+    "React",
+    "Redux,",
+    "RXJS",
+    "Redux Observable",
+    "HTML 5, CSS 3, Material UI,Bootstrap",
+    "Azure Devops, Vercel",
+    "Figma, Git, Wordpress",
+    "Agile Methodology (Scrum)",
+  ];
 
   return (
     <div>
@@ -51,14 +106,14 @@ const CV = () => {
       <PersonalInfo {...personalInfo} />
 
       <section>
-        <h3>Education</h3>
+        <h2>Education</h2>
         {education.map((edu, index) => (
           <Education key={index} {...edu} />
         ))}
       </section>
 
       <section>
-        <h3>Experience</h3>
+        <h2>Experience</h2>
         {experience.map((exp, index) => (
           <Experience key={index} {...exp} />
         ))}

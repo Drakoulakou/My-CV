@@ -46,7 +46,7 @@ h2 {
   margin: 10px 0;
   font-size: 24px;
   font-weight: normal;
-  color: pink;
+  color: #ff5471;
 }
 
 section {
@@ -56,6 +56,7 @@ section {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
   animation: slide-up 1s ease-in-out;
+  text-align: center;
 }
 
 @keyframes slide-up {
