@@ -9,7 +9,7 @@ const CV = () => {
   const personalInfo = {
     name: "Eleftheria Drakoulakou",
     title: "Frontend Developer",
-    address: "Alimos Greece",
+    address: "Alimos, Greece",
     phone: "6978524096",
     email: "drakelef@gmail.com",
     website: "https://github.com/Drakoulakou",
@@ -106,13 +106,6 @@ const CV = () => {
       <PersonalInfo {...personalInfo} />
 
       <section>
-        <h2>Education</h2>
-        {education.map((edu, index) => (
-          <Education key={index} {...edu} />
-        ))}
-      </section>
-
-      <section>
         <h2>Experience</h2>
         {experience.map((exp, index) => (
           <Experience key={index} {...exp} />
@@ -120,6 +113,12 @@ const CV = () => {
       </section>
 
       <SkillList skills={skills} />
+      <section>
+        <h2>Education</h2>
+        {education.map((edu, index) => (
+          <Education key={index} {...edu} />
+        ))}
+      </section>
     </div>
   );
 };
